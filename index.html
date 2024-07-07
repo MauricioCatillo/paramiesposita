@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Que no te amo?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="scene">
+        <div class="layer" data-depth="0.20">
+            <img src="background.jpg" alt="Background" class="background">
+        </div>
+        <div class="layer" data-depth="0.40">
+            <div class="container" onclick="toggleText()">
+                <h1>¿Que no te amo?</h1>
+                <p class="lyrics hidden">"Dejaría que el mundo arda<br>
+                deja que el mundo arda por ti<br>
+                así es como tuvo que terminar<br>
+                si no puedo tenerte entonces nadie te tendrá"</p>
+            </div>
+        </div>
+        <div class="layer" data-depth="0.60">
+            <canvas id="particles"></canvas>
+        </div>
+    </div>
+    <audio id="audio" src="moriria_por_ti.mp3"></audio>
+    <script src="parallax.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
